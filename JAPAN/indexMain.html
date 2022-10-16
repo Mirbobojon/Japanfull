@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./indexMain.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./Logo_JCI_International.svg.png" alt="" />
+      </div>
+      <nav class="nav" id="nav-menu">
+        <ion-icon
+          class="close"
+          id="headerClose"
+          name="close-outline"
+        ></ion-icon>
+        <ul>
+          <li><a class="navLinks" href="">マイページ</a></li>
+          <li><a class="navLinks" href="">グアウト</a></li>
+        </ul>
+      </nav>
+      <ion-icon class="toggle" id="headerToggle" name="menu-outline"></ion-icon>
+    </header>
+    <div class="blueBanner"><a href="">トップページ</a></div>
+    <section>
+      <h3>メンバー検索</h3>
+      <div class="btns">
+        <button class="sectionBtn active">正会員</button>
+        <button class="sectionBtn">特別会員</button>
+        <button class="sectionBtn">すべて</button>
+      </div>
+    </section>
+    <main>
+      <div class="inputContainer">
+        <div class="left">
+          <div class="inputField">
+            <label>名前</label>
+            <input type="text" />
+          </div>
+          <div class="inputField">
+            <label>フリーワード</label>
+            <input type="text" />
+          </div>
+          <div class="inputField">
+            <label>入会年度</label>
+            <!-- <input type="text" /> -->
+            <select class="inputSelect" name="" id="">
+              <option value="選択してください">選択してください</option>
+              <option value="選択してください">選択してください</option>
+              <option value="選択してください">選択してください</option>
+            </select>
+          </div>
+          <div class="inputField">
+            <label>卒業年度</label>
+            <!-- <input type="text" /> -->
+            <select class="inputSelect" name="" id="">
+              <option value="選択してください">選択してください</option>
+              <option value="選択してください">選択してください</option>
+              <option value="選択してください">選択してください</option>
+            </select>
+          </div>
+          <div class="inputField">
+            <label>役職</label>
+            <!-- <input type="text" /> -->
+            <select class="inputSelect" name="" id="">
+              <option value="選択してください">選択してください</option>
+              <option value="選択してください">選択してください</option>
+              <option value="選択してください">選択してください</option>
+            </select>
+          </div>
+          <div class="inputField">
+            <label>所属委員会</label>
+            <!-- <input type="text" /> -->
+            <select class="inputSelect" name="" id="">
+              <option value="選択してください">選択してください</option>
+              <option value="選択してください">選択してください</option>
+              <option value="選択してください">選択してください</option>
+            </select>
+          </div>
+        </div>
+        <div class="right">
+          <div class="inputField">
+            <label>電話番号 </label>
+            <input type="text" />
+          </div>
+          <div class="inputField">
+            <label>メールアドレス</label>
+            <input type="text" />
+          </div>
+
+          <div class="inputField">
+            <label>生年月日</label>
+            <!-- <input type="text" /> -->
+            <select id="month" class="" name="" id="">
+              <option value="選">選</option>
+              <option value="選">選</option>
+              <option value="選">選</option>
+            </select>
+            <select id="day" class="" name="" id="">
+              <option value="月">月</option>
+              <option value="選">選</option>
+              <option value="選">選</option>
+            </select>
+            <select id="year" class="" name="" id="">
+              <option value="日">日</option>
+              <option value="選">選</option>
+              <option value="選">選</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="mainBtn">
+        <button class="orangeBtn">
+          <a href="./infoComponents.html">検索する</a>
+        </button>
+      </div>
+      <footer>Copyright © Junior Chamber International NAGASAK</footer>
+    </main>
+    <script src="main.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

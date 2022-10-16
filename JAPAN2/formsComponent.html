@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./formsComponent.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./logox.png" alt="" />
+      </div>
+      <nav class="nav" id="nav-menu">
+        <ion-icon
+          class="close"
+          id="headerClose"
+          name="close-outline"
+        ></ion-icon>
+        <ul>
+          <li><a class="navLinks" href="">マイページ</a></li>
+          <li><a class="navLinks" href="">グアウト</a></li>
+        </ul>
+      </nav>
+      <ion-icon class="toggle" id="headerToggle" name="menu-outline"></ion-icon>
+    </header>
+    <div class="blueBanner"><a href="">トップページ</a></div>
+
+    <section>
+      <br />
+      <center><h4>マイページ</h4></center>
+      <h5>登録内容の確</h5>
+      <div class="inputsContainer">
+        <div class="left">
+          <label for="">ID</label>
+          <input type="text" value="JCmember-001" />
+          <label for="">お名前</label>
+          <input type="text" value="山田 太" />
+          <label for="">ふりがな</label>
+          <input type="text" value="やまだ たろう" />
+          <label for="">生年月日</label>
+          <input type="text" value="0000/00/00" />
+          <label for="">入会年</label>
+          <input type="text" value="第 00 年度" />
+          <label for="">電話番号</label>
+          <input type="text" value="080-1111-2222" />
+          <label for="">メールアドレス</label>
+          <input type="text" value="yamadatest@gmail.com" />
+        </div>
+        <div class="right">
+          <label for="">会社名</label>
+          <input type="text" value="株式会社 XXXXX" />
+          <label for="">役職</label>
+          <input type="text" value="XXXXX" />
+          <label for="">会社住</label>
+          <input type="text" value="850-0000　長崎市出島町 1-1-1" />
+          <label for="">会社電話番号</label>
+          <input type="text" value="000-111-222" />
+          <label for="">会社電話</label>
+          <input type="text" value="000-111-222" />
+          <label for="">委員会名（役職)</label>
+          <input type="text" value="XXXXX" />
+          <label for="">推薦者</label>
+          <input type="text" value="XXXXX" />
+        </div>
+      </div>
+    </section>
+    <div class="blueBigBtn">
+      <button><a href="./formsComponent2.html">登録内容の編集</a></button>
+    </div>
+    <footer>
+      <p>Copyright © Junior Chamber International NAGASAK</p>
+    </footer>
+    <script src="./main.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

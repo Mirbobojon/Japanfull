@@ -1,0 +1,221 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header {
+  display: flex;
+
+  justify-content: space-around;
+  padding: 1rem 0;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  margin: 0 8px;
+}
+
+.navLinks {
+  color: blue;
+  border-radius: 10px;
+  padding: 5px 10px;
+  border: 1px solid blue;
+}
+
+#headerToggle,
+#headerClose {
+  display: none;
+}
+
+.blueBanner {
+  width: 100vw;
+  height: 50px;
+  background-color: rgb(42, 42, 144);
+}
+
+.blueBanner a {
+  color: white;
+  line-height: 50px;
+  margin-left: 220px;
+}
+
+h3 {
+  color: rgb(42, 42, 144);
+  text-align: center;
+  margin: 30px 0;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+}
+
+.sectionBtn {
+  border-radius: 40px;
+  padding: 5px 20px;
+  margin: 0 15px;
+  border: none;
+  background-color: #999;
+  color: white;
+}
+
+.active {
+  background-color: rgb(42, 98, 157);
+}
+
+.inputContainer {
+  width: 700px;
+  display: flex;
+  justify-content: space-around;
+  margin: 50px auto;
+}
+
+.inputField {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputSelect {
+  padding: 10px 42px;
+  background-color: #eee;
+  border: none;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+.left {
+  width: 45%;
+}
+
+input {
+  padding: 10px 20px;
+  background-color: #eee;
+  border: none;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+label {
+  font-size: 14px;
+  margin: 5px 0;
+  font-weight: 700;
+}
+
+.right {
+  width: 45%;
+}
+
+#month {
+  padding: 10px 20px;
+}
+
+#day,
+#month,
+#year {
+  padding: 10px;
+  background-color: #eee;
+  border-radius: 5px;
+  border: none;
+}
+
+.mainBtn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.orangeBtn {
+  color: white;
+  background-color: orange;
+  border: none;
+  border-radius: 5px;
+  width: 200px;
+  height: 40px;
+}
+
+.orangeBtn:hover {
+  cursor: pointer;
+}
+footer {
+  text-align: center;
+  margin: 10px 0;
+}
+@media screen and (max-width: 786px) {
+  header {
+    height: 48px;
+    justify-content: space-around;
+    padding: 0 20px;
+  }
+
+  .logo img {
+    width: 100px;
+  }
+
+  #headerToggle {
+    display: inline;
+    color: black;
+  }
+
+  #headerClose {
+    position: absolute;
+    right: 24px;
+    display: block;
+    font-size: 24px;
+    border-radius: 50%;
+  }
+  .nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: #eee;
+    color: black;
+    width: 60%;
+    padding: 24px 0;
+    z-index: 1;
+    height: 100vh;
+    transition: 0.5s;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  li {
+    margin: 1rem;
+  }
+  .show {
+    right: 0;
+  }
+
+  .inputContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+  }
+  .inputField {
+    flex-direction: row;
+  }
+}

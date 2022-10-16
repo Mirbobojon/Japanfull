@@ -1,0 +1,197 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header {
+  display: flex;
+
+  justify-content: space-around;
+  padding: 1rem 0;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  margin: 0 8px;
+}
+
+.navLinks {
+  color: blue;
+  border-radius: 10px;
+  padding: 5px 10px;
+  border: 1px solid blue;
+}
+
+#headerToggle,
+#headerClose {
+  display: none;
+}
+
+.blueBanner {
+  width: 100vw;
+  height: 50px;
+  background-color: rgb(42, 42, 144);
+}
+
+.blueBanner a {
+  color: white;
+  line-height: 50px;
+  margin-left: 220px;
+}
+
+.headInfo {
+  margin: 15px 0 15px 220px;
+}
+
+.boxMainLink {
+  width: 65%;
+  height: 50px;
+  margin: 0 auto 20px auto;
+  border: 1px solid rgb(42, 42, 144);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+span {
+  position: absolute;
+  right: 220px;
+}
+footer {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.infoBoxes {
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.infoBox {
+  width: 390px;
+  height: 400px;
+  margin-left: 100px;
+}
+
+.infoHeader {
+  display: flex;
+  justify-content: space-between;
+  background-color: aqua;
+  margin: 5px 0;
+}
+.infoBox img {
+  width: 180px;
+  height: 200px;
+  display: inline-block;
+}
+
+.infoBody {
+  display: flex;
+}
+
+.leftSide {
+  font-size: 14px;
+}
+.leftSide p {
+  margin: 10px;
+}
+
+.footerBtns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footerBtn {
+  padding: 10px;
+  border: 1px solid blue;
+  color: blue;
+  background-color: transparent;
+  margin: 5px 15px;
+  width: 55px;
+  height: 55px;
+}
+
+.active {
+  background-color: royalblue;
+  color: white;
+}
+@media screen and (max-width: 786px) {
+  header {
+    height: 48px;
+    justify-content: space-around;
+    padding: 0 20px;
+    background-color: rgb(42, 42, 144);
+  }
+
+  .blueBanner {
+    background-color: white;
+    color: blue;
+  }
+
+  .logo img {
+    width: 100px;
+  }
+
+  #headerToggle {
+    display: inline;
+    color: #eee;
+  }
+
+  #headerClose {
+    position: absolute;
+    right: 24px;
+    display: block;
+    font-size: 24px;
+    border-radius: 50%;
+  }
+  .nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: #eee;
+    color: black;
+    width: 60%;
+    padding: 24px 0;
+    z-index: 1;
+    height: 100vh;
+    transition: 0.5s;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  li {
+    margin: 1rem;
+  }
+  .show {
+    right: 0;
+  }
+  .infoBox {
+    margin-left: 0;
+  }
+}
